@@ -1,0 +1,97 @@
+/* 🌟 General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f7f7f7, #e3f2fd); /* Light gradient */
+    color: #333;
+}
+
+/* 🌟 Navigation Bar */
+.navbar {
+    background: linear-gradient(to right, #ff5733, #ffcc00); /* Vibrant gradient */
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #000; /* Changes to black on hover */
+}
+
+/* 🌟 Flexbox Layout for Content Sections */
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* 🌟 Colorful Section Boxes */
+.box:nth-child(1) {
+    background: #ffcc00; /* Yellow */
+}
+
+.box:nth-child(2) {
+    background: #009688; /* Teal */
+}
+
+.box:nth-child(3) {
+    background: #ff4081; /* Pink */
+}
+
+.box {
+    color: white;
+    padding: 25px;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* 🌟 Responsive Design (Media Queries) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+}
+
+/* 🌟 Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+}
